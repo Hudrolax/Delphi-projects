@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<nodeSet>
+  <view uin="9d8qe69ml">
+    <property name="$name" value="keygen" />
+    <property name="$metaclass" value="Package Diagram" />
+    <reference referencedUin="source:Project1:keygen.TForm1">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="source:Project1:keygen.TForm1.Label1" />
+      <reference referencedUin="source:Project1:keygen.TForm1.Edit1" />
+      <reference referencedUin="source:Project1:keygen.TForm1.Edit2" />
+      <reference referencedUin="source:Project1:keygen.TForm1.Label2" />
+      <reference referencedUin="source:Project1:keygen.TForm1.Label3" />
+      <reference referencedUin="source:Project1:keygen.TForm1.Label4" />
+      <reference referencedUin="source:Project1:keygen.TForm1.Button1" />
+      <reference referencedUin="source:Project1:keygen.TForm1.Button2" />
+      <reference referencedUin="source:Project1:keygen.TForm1.Button2Click" />
+      <reference referencedUin="source:Project1:keygen.TForm1.Button1Click" />
+    </reference>
+  </view>
+</nodeSet>
