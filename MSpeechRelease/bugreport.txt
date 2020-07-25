@@ -1,0 +1,1374 @@
+date/time         : 2013-08-27, 20:08:52, 237ms
+computer name     : ZEON
+user name         : Admin <admin>
+registered owner  : Microsoft / Microsoft
+operating system  : Windows 7 x64 Service Pack 1 build 7601
+system language   : Russian
+system up time    : 46 minutes 2 seconds
+program up time   : 1 minute 36 seconds
+processors        : 2x AMD Phenom(tm) II X2 555 Processor
+physical memory   : 5938/8191 MB (free/total)
+free disk space   : (C:) 6,12 GB
+display mode      : 1680x1050, 32 bit
+process id        : $3f0
+allocated memory  : 62,46 MB
+executable        : MSpeech.exe
+exec. date/time   : 2013-08-16 15:21
+version           : 1.3.0.0
+compiled with     : Delphi XE4
+madExcept version : 4.0.7
+callstack crc     : $31603060, $253d38be, $53a6c81a
+count             : 4
+exception number  : 1
+exception class   : EAccessViolation
+exception message : Access violation at address 31603060. Read of address 31603060.
+
+main thread ($6d8):
+31603060 +00 ???
+00408b34 +08 MSpeech.exe  System         147 +0 TObject.Free
+0069008b +5b MSpeech.exe  Global         292 +6 GetFileSize
+006fc0fb +3f MSpeech.exe  Main           759 +1 TMainForm.JvThreadRecognizeExecute
+006f65f0 +70 MSpeech.exe  JvThread              TJvBaseThread.Execute
+004a548f +2b MSpeech.exe  madExcept             HookedTThreadExecute
+00537332 +42 MSpeech.exe  System.Classes        ThreadProc
+0040a720 +28 MSpeech.exe  System         147 +0 ThreadWrapper
+004a5375 +0d MSpeech.exe  madExcept             CallThreadProcSafe
+004a53da +32 MSpeech.exe  madExcept             ThreadExceptFrame
+75c633a8 +10 kernel32.dll                       BaseThreadInitThunk
+
+thread $13f4:
+77650136 +0e ntdll.dll     NtWaitForMultipleObjects
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $10f0:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1184 (TAuThread):
+7764fd6a +0e ntdll.dll                               NtDelayExecution
+756f3bc2 +5f KERNELBASE.dll                          SleepEx
+756f4493 +0a KERNELBASE.dll                          Sleep
+0065cee8 +94 MSpeech.exe    ACS_DXAudio      658 +12 TDXAudioIn.GetDataInternal
+0065604a +2e MSpeech.exe    ACS_Classes     1194  +3 TAuInput.GetData
+00657405 +25 MSpeech.exe    NewACIndicators  282  +2 TFastGainIndicator.GetDataInternal
+00656e11 +41 MSpeech.exe    ACS_Classes     2139  +9 TAuConverter.GetData
+00656ae0 +30 MSpeech.exe    ACS_Classes     1842  +7 TAuInput.FillBuffer
+0065b212 +42 MSpeech.exe    ACS_FLAC         821  +8 TFLACOut.DoOutput
+0065625a +de MSpeech.exe    ACS_Classes     1274 +28 TAuThread.Execute
+0040a720 +28 MSpeech.exe    System           147  +0 ThreadWrapper
+004a5375 +0d MSpeech.exe    madExcept                CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept                ThreadExceptFrame
+75c633a8 +10 kernel32.dll                            BaseThreadInitThunk
+>> created by main thread ($6d8) at:
+0065608c +18 MSpeech.exe    ACS_Classes     1202  +1 TAuThread.Create
+
+thread $17bc (TEventHandler):
+77650136 +0e ntdll.dll                               NtWaitForMultipleObjects
+756f15e3 +fa KERNELBASE.dll                          WaitForMultipleObjectsEx
+75c61a27 +89 kernel32.dll                            WaitForMultipleObjectsEx
+004ae9de +56 MSpeech.exe    System.SyncObjs          THandleObject.WaitFor
+00655dad +bd MSpeech.exe    ACS_Classes     1097 +24 TEventHandler.Execute
+0040a720 +28 MSpeech.exe    System           147  +0 ThreadWrapper
+004a5375 +0d MSpeech.exe    madExcept                CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept                ThreadExceptFrame
+75c633a8 +10 kernel32.dll                            BaseThreadInitThunk
+>> created by main thread ($6d8) at:
+00655adc +18 MSpeech.exe    ACS_Classes      985  +1 TEventHandler.Create
+
+thread $131c (TAuThread):
+77650136 +00e ntdll.dll                               NtWaitForMultipleObjects
+756f15e3 +0fa KERNELBASE.dll                          WaitForMultipleObjectsEx
+75c61a27 +089 kernel32.dll                            WaitForMultipleObjectsEx
+004ae9de +056 MSpeech.exe    System.SyncObjs          THandleObject.WaitFor
+0065613f +017 MSpeech.exe    ACS_Classes     1224  +3 TAuThread.SoftSleep
+00656375 +1f9 MSpeech.exe    ACS_Classes     1298 +52 TAuThread.Execute
+004a548f +02b MSpeech.exe    madExcept                HookedTThreadExecute
+00537332 +042 MSpeech.exe    System.Classes           ThreadProc
+0040a720 +028 MSpeech.exe    System           147  +0 ThreadWrapper
+004a5375 +00d MSpeech.exe    madExcept                CallThreadProcSafe
+004a53da +032 MSpeech.exe    madExcept                ThreadExceptFrame
+75c633a8 +010 kernel32.dll                            BaseThreadInitThunk
+>> created by main thread ($6d8) at:
+0065608c +018 MSpeech.exe    ACS_Classes     1202  +1 TAuThread.Create
+
+thread $f8c: <priority:15>
+77650136 +0e ntdll.dll                NtWaitForMultipleObjects
+756f15e3 +fa KERNELBASE.dll           WaitForMultipleObjectsEx
+75c61a27 +89 kernel32.dll             WaitForMultipleObjectsEx
+75c6421b +13 kernel32.dll             WaitForMultipleObjects
+004a5375 +0d MSpeech.exe    madExcept CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept ThreadExceptFrame
+75c633a8 +10 kernel32.dll             BaseThreadInitThunk
+>> created by thread $131c (TAuThread) at:
+700cf671 +00 dsound.dll
+
+thread $a18:
+77651df7 +0b ntdll.dll     NtTraceControl
+77687151 +40 ntdll.dll     EtwpNotificationThread
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $11e8:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1138:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $994 (TJvBaseThread):
+7764f8aa +00e ntdll.dll                             NtWaitForSingleObject
+756f1497 +092 KERNELBASE.dll                        WaitForSingleObjectEx
+75c6118f +03e kernel32.dll                          WaitForSingleObjectEx
+75c61143 +00d kernel32.dll                          WaitForSingleObject
+00457e16 +002 MSpeech.exe    System.SysUtils        WaitForSyncWaitObj
+00457f5f +01f MSpeech.exe    System.SysUtils        WaitOrSignalObj
+0040995d +065 MSpeech.exe    System          147 +0 TMonitor.Wait
+004099cc +020 MSpeech.exe    System          147 +0 TMonitor.Wait
+00537ddf +13b MSpeech.exe    System.Classes         TThread.Synchronize
+00537e75 +029 MSpeech.exe    System.Classes         TThread.Synchronize
+006f6685 +009 MSpeech.exe    JvThread               TJvBaseThread.Synchronize
+006f664d +0cd MSpeech.exe    JvThread               TJvBaseThread.Execute
+7764012e +00a ntdll.dll                             KiUserExceptionDispatcher
+00408b34 +008 MSpeech.exe    System          147 +0 TObject.Free
+0069008b +05b MSpeech.exe    Global          292 +6 GetFileSize
+006fc0fb +03f MSpeech.exe    Main            759 +1 TMainForm.JvThreadRecognizeExecute
+006f65f0 +070 MSpeech.exe    JvThread               TJvBaseThread.Execute
+004a548f +02b MSpeech.exe    madExcept              HookedTThreadExecute
+00537332 +042 MSpeech.exe    System.Classes         ThreadProc
+0040a720 +028 MSpeech.exe    System          147 +0 ThreadWrapper
+004a5375 +00d MSpeech.exe    madExcept              CallThreadProcSafe
+004a53da +032 MSpeech.exe    madExcept              ThreadExceptFrame
+75c633a8 +010 kernel32.dll                          BaseThreadInitThunk
+>> created by main thread ($6d8) at:
+006f676e +02e MSpeech.exe    JvThread               TJvPausableThread.Create
+
+thread $d00: <priority:-3>
+77650136 +0e ntdll.dll                NtWaitForMultipleObjects
+756f15e3 +fa KERNELBASE.dll           WaitForMultipleObjectsEx
+75c61a27 +89 kernel32.dll             WaitForMultipleObjectsEx
+004a5375 +0d MSpeech.exe    madExcept CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept ThreadExceptFrame
+75c633a8 +10 kernel32.dll             BaseThreadInitThunk
+>> created by thread $1184 (TAuThread) at:
+71065342 +00 wdmaud.drv
+
+thread $534:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $2c4: <priority:15>
+77650136 +0e ntdll.dll                NtWaitForMultipleObjects
+756f15e3 +fa KERNELBASE.dll           WaitForMultipleObjectsEx
+75c61a27 +89 kernel32.dll             WaitForMultipleObjectsEx
+75c6421b +13 kernel32.dll             WaitForMultipleObjects
+004a5375 +0d MSpeech.exe    madExcept CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept ThreadExceptFrame
+75c633a8 +10 kernel32.dll             BaseThreadInitThunk
+>> created by thread $1184 (TAuThread) at:
+700f505b +00 dsound.dll
+
+modules:
+00400000 MSpeech.exe    1.3.0.0            C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+03ca0000 ssleay32.dll   1.0.0.3            C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+058c0000 libFLAC.dll                       C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+10000000 libeay32.dll   1.0.0.3            C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+6bed0000 POWRPROF.dll   6.1.7600.16385     C:\Windows\system32
+700a0000 dsound.dll     6.1.7600.16385     C:\Windows\system32
+70a20000 WINMM.dll      6.1.7601.17514     C:\Windows\system32
+70b60000 AUDIOSES.DLL   6.1.7601.17514     C:\Windows\system32
+70d30000 midimap.dll    6.1.7600.16385     C:\Windows\system32
+70d40000 MSACM32.dll    6.1.7600.16385     C:\Windows\system32
+70d60000 MMDevAPI.DLL   6.1.7601.17514     C:\Windows\system32
+71060000 wdmaud.drv     6.1.7601.17514     C:\Windows\system32
+710a0000 wtsapi32.dll   6.1.7601.17514     C:\Windows\system32
+71140000 dwmapi.dll     6.1.7600.16385     C:\Windows\system32
+71180000 msacm32.drv    6.1.7600.16385     C:\Windows\system32
+71190000 AVRT.dll       6.1.7600.16385     C:\Windows\system32
+72b50000 MSVCR90.dll    9.0.30729.4940     C:\Windows\WinSxS\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.4940_none_50916076bcb9a742
+730a0000 uxtheme.dll    6.1.7600.16385     C:\Windows\system32
+73120000 apphelp.dll    6.1.7601.17514     C:\Windows\system32
+73170000 WINSTA.dll     6.1.7601.17514     C:\Windows\system32
+731a0000 WINNSI.DLL     6.1.7600.16385     C:\Windows\system32
+731b0000 IPHLPAPI.DLL   6.1.7601.17514     C:\Windows\system32
+731e0000 msxml6.dll     6.30.7601.17988    C:\Windows\System32
+733f0000 wshtcpip.dll   6.1.7600.16385     C:\Windows\System32
+73490000 DNSAPI.dll     6.1.7601.17570     C:\Windows\system32
+73530000 PROPSYS.dll    7.0.7601.17514     C:\Windows\system32
+73890000 wship6.dll     6.1.7600.16385     C:\Windows\System32
+738c0000 mswsock.dll    6.1.7601.17514     C:\Windows\System32
+73940000 wsock32.dll    6.1.7600.16385     C:\Windows\system32
+73ad0000 rsaenh.dll     6.1.7600.16385     C:\Windows\system32
+73b10000 CRYPTSP.dll    6.1.7600.16385     C:\Windows\system32
+73b30000 version.dll    6.1.7600.16385     C:\Windows\system32
+73b40000 comctl32.dll   6.10.7601.17514    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2
+73d00000 ntmarta.dll    6.1.7600.16385     C:\Windows\system32
+73fc0000 FaultRep.dll   6.1.7601.17514     C:\Windows\system32
+74270000 ksuser.dll     6.1.7600.16385     C:\Windows\system32
+74620000 winspool.drv   6.1.7601.17514     C:\Windows\system32
+74950000 rasadhlp.dll   6.1.7600.16385     C:\Windows\system32
+74960000 fwpuclnt.dll   6.1.7601.17514     C:\Windows\System32
+75180000 CRYPTBASE.dll  6.1.7600.16385     C:\Windows\syswow64
+75190000 SspiCli.dll    6.1.7601.17856     C:\Windows\syswow64
+75220000 RPCRT4.dll     6.1.7601.17514     C:\Windows\syswow64
+75310000 IMM32.DLL      6.1.7601.17514     C:\Windows\system32
+75370000 WLDAP32.dll    6.1.7601.17514     C:\Windows\syswow64
+753c0000 ole32.dll      6.1.7601.17514     C:\Windows\syswow64
+75540000 SETUPAPI.dll   6.1.7601.17514     C:\Windows\syswow64
+756e0000 KERNELBASE.dll 6.1.7601.17965     C:\Windows\syswow64
+757a0000 CFGMGR32.dll   6.1.7601.17621     C:\Windows\syswow64
+757d0000 sechost.dll    6.1.7600.16385     C:\Windows\SysWOW64
+75930000 GDI32.dll      6.1.7601.17514     C:\Windows\syswow64
+759c0000 USER32.dll     6.1.7601.17514     C:\Windows\syswow64
+75ac0000 NSI.dll        6.1.7600.16385     C:\Windows\syswow64
+75ad0000 msvcrt.dll     7.0.7601.17744     C:\Windows\syswow64
+75b80000 OLEAUT32.dll   6.1.7601.17676     C:\Windows\syswow64
+75c10000 WS2_32.dll     6.1.7601.17514     C:\Windows\syswow64
+75c50000 kernel32.dll   6.1.7601.17965     C:\Windows\syswow64
+75d60000 CLBCatQ.DLL    2001.12.8530.16385 C:\Windows\syswow64
+75df0000 SHLWAPI.dll    6.1.7601.17514     C:\Windows\syswow64
+75e50000 USP10.dll      1.626.7601.17514   C:\Windows\syswow64
+760f0000 DEVOBJ.dll     6.1.7601.17621     C:\Windows\syswow64
+76110000 MSCTF.dll      6.1.7600.16385     C:\Windows\syswow64
+761e0000 comdlg32.dll   6.1.7601.17514     C:\Windows\syswow64
+762f0000 SHELL32.dll    6.1.7601.17514     C:\Windows\syswow64
+77190000 advapi32.dll   6.1.7601.17514     C:\Windows\syswow64
+77600000 LPK.dll        6.1.7600.16385     C:\Windows\syswow64
+77630000 ntdll.dll      6.1.7601.17725     C:\Windows\SysWOW64
+
+processes:
+0000 Idle                           0 0   0
+0004 System                         0 0   0
+0140 smss.exe                       0 0   0
+018c csrss.exe                      0 0   0
+01d8 wininit.exe                    0 0   0
+01e4 csrss.exe                      1 0   0
+020c services.exe                   0 0   0
+0220 lsass.exe                      0 0   0
+0228 lsm.exe                        0 0   0
+0264 winlogon.exe                   1 0   0
+02b8 svchost.exe                    0 0   0
+0304 svchost.exe                    0 0   0
+0340 MsMpEng.exe                    0 0   0
+03b8 atiesrxx.exe                   0 0   0
+03e0 svchost.exe                    0 0   0
+0070 svchost.exe                    0 0   0
+0168 svchost.exe                    0 0   0
+0288 audiodg.exe                    0 0   0
+041c svchost.exe                    0 0   0
+0440 atieclxx.exe                   1 0   0
+04bc svchost.exe                    0 0   0
+0620 spoolsv.exe                    0 0   0
+068c taskhost.exe                   1 26  21  normal
+06c4 svchost.exe                    0 0   0
+0734 ACService.exe                  0 0   0
+0784 Fuel.Service.exe               0 0   0
+07c0 taskeng.exe                    1 10  3   normal
+04dc MSIAfterburner.exe             1 85  34  below normal C:\Program Files (x86)\MSI Afterburner
+0680 GoogleCrashHandler.exe         0 0   0
+0674 GoogleCrashHandler64.exe       0 0   0
+0774 mounter.exe                    0 0   0
+07b0 svchost.exe                    0 0   0
+0808 raysat_3dsmax2012_64server.exe 0 0   0
+0830 QipGuard.exe                   0 0   0
+0850 SeaPort.exe                    0 0   0
+0884 svchost.exe                    0 0   0
+08dc R2PCServ.exe                   0 0   0
+0900 R2PCServ.exe                   1 0   0
+0acc NisSrv.exe                     0 0   0
+0b20 svchost.exe                    0 0   0
+08a8 dwm.exe                        1 17  2   high
+0aa8 explorer.exe                   1 574 286 normal
+0b14 msseces.exe                    1 143 59  normal
+0be0 ScanToPCActivationApp.exe      1 31  26  normal
+0638 googledrivesync.exe            1 4   1   normal       C:\Program Files (x86)\Google\Drive
+0c58 R2PCSH.exe                     1 0   0
+0d68 googledrivesync.exe            1 62  32  normal       C:\Program Files (x86)\Google\Drive
+0db8 SearchIndexer.exe              0 0   0
+0de0 jusched.exe                    1 9   2   normal       C:\Program Files (x86)\Common Files\Java\Java Update
+0dec hpwuschd2.exe                  1 9   4   normal       C:\Program Files (x86)\HP\HP Software Update
+0e04 Updater.exe                    1 9   5   normal       C:\Program Files (x86)\Ask.com\Updater
+0e14 ACDaemon.exe                   1 9   6   normal       C:\Program Files (x86)\Common Files\ArcSoft\Connection Service\Bin
+0e48 CoinChanger.exe                1 37  26  normal       C:\cgminer_litecoin
+0e60 cmd.exe                        1 4   1   normal
+0e6c conhost.exe                    1 32  15  normal
+0e98 MOM.exe                        1 10  10  normal
+0ea4 cmd.exe                        1 4   1   normal
+0ed4 cgminer.exe                    1 4   6   realtime     C:\cgminer_litecoin
+0ee8 conhost.exe                    1 26  13  normal
+0f98 CCC.exe                        1 103 68  normal
+0cd8 HPNetworkCommunicator.exe      1 9   1   normal
+00b4 Totalcmd.exe                   1 286 166 normal       C:\Program Files (x86)\TC
+1064 Tcmdx64.exe                    1 67  13  normal
+0d80 jucheck.exe                    1 12  6   normal       C:\Program Files (x86)\Common Files\Java\Java Update
+1684 mswinext.exe                   1 11  22  normal       C:\Program Files (x86)\MSN Toolbar\Platform\6.3.2291.0
+17c0 chrome.exe                     1 200 86  normal       C:\Program Files (x86)\Google\Chrome\Application
+17e4 chrome.exe                     1 13  3   normal       C:\Program Files (x86)\Google\Chrome\Application
+124c chrome.exe                     1 21  1   below normal C:\Program Files (x86)\Google\Chrome\Application
+0f90 chrome.exe                     1 86  1   below normal C:\Program Files (x86)\Google\Chrome\Application
+1260 chrome.exe                     1 30  1   below normal C:\Program Files (x86)\Google\Chrome\Application
+0a74 chrome.exe                     1 166 1   below normal C:\Program Files (x86)\Google\Chrome\Application
+1030 taskmgr.exe                    1 115 105 high
+119c chrome.exe                     1 174 1   below normal C:\Program Files (x86)\Google\Chrome\Application
+10a4 chrome.exe                     1 67  1   normal       C:\Program Files (x86)\Google\Chrome\Application
+03f0 MSpeech.exe                    1 145 119 normal       C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+
+hardware:
++ Computer
+  - ACPI x64-based PC
++ Disk drives
+  - WDC WD25 00AAKS-00VSA SCSI Disk Device
++ Display adapters
+  - AMD Radeon HD 7900 Series (driver 12.104.0.0)
++ DVD/CD-ROM drives
+  - Optiarc DVD RW AD-5260S SCSI CdRom Device
++ Human Interface Devices
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство управления
+  - USB-устройство ввода
+  - USB-устройство ввода
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - NVIDIA nForce Serial ATA Controller (driver 11.1.0.33)
+  - Стандартный двухканальный контроллер PCI IDE
++ Imaging devices
+  - HP Photosmart 7510 series (NET) (driver 9.0.0.0)
++ Keyboards
+  - Клавиатура HID
+  - Стандартная клавиатура PS/2
++ Mice and other pointing devices
+  - HID-совместимая мышь
++ Monitors
+  - Универсальный монитор PnP
++ Network adapters
+  - Teredo Tunneling Pseudo-Interface
+  - WAN Miniport (IKEv2)
+  - Адаптер Microsoft ISATAP
+  - Адаптер Microsoft ISATAP #2
+  - Мини-порт WAN (SSTP)
+  - Минипорт WAN (IP)
+  - Минипорт WAN (IPv6)
+  - Минипорт WAN (L2TP)
+  - Минипорт WAN (PPPoE)
+  - Минипорт WAN (PPTP)
+  - Минипорт WAN (Сетевой монитор)
+  - Сетевой контроллер NVIDIA nForce
++ Ports (COM & LPT)
+  - Последовательный порт (COM1)
++ Printers
+  - HP Photosmart 7510 series (driver 6.64.0.986)
++ Processors
+  - AMD Phenom(tm) II X2 555 Processor
+  - AMD Phenom(tm) II X2 555 Processor
++ Sound, video and game controllers
+  - AMD High Definition Audio Device (driver 7.12.0.7714)
+  - SB Live! 24-bit (driver 5.12.1.2004)
+  - USB 2861 Device (driver 5.2009.1202.0)
+  - Аудио устройства USB
++ Storage volume shadow copies
+  - Универсальная теневая копия тома
+  - Универсальная теневая копия тома
+  - Универсальная теневая копия тома
+  - Универсальная теневая копия тома
++ System devices
+  - AMD IO Driver (driver 1.0.0.15)
+  - CMOS и часы
+  - Microsoft ACPI-совместимая система
+  - Microsoft System Management BIOS драйвер
+  - Remote Desktop Device Redirector Bus
+  - UMBus перечислитель
+  - UMBus перечислитель корневой шины
+  - Арифметический сопроцессор
+  - Встроенный динамик
+  - Диспетчер томов
+  - Драйвер клавиатуры сервера терминалов
+  - Драйвер мыши сервера терминалов
+  - Драйвер перечислителя виртуальных дисков (Майкрософт)
+  - Драйвер файла в качестве тома
+  - Кнопка питания ACPI
+  - Контроллер High Definition Audio (Microsoft)
+  - Контроллер прямого доступа к памяти
+  - Перечислитель композитной шины
+  - Перечислитель программных устройств Plug and Play
+  - Программируемый контроллер прерываний
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Системная плата
+  - Системный таймер
+  - Стандартный PCI-контроллер RAM
+  - Стандартный PCI-контроллер RAM
+  - Стандартный PCI-контроллер RAM
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI - ISA
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Фиксированная функциональная кнопка ACPI
+  - Шина NVIDIA nForce PCI System Management
+  - Шина PCI
++ Universal Serial Bus controllers
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Составное USB устройство
+  - Составное USB устройство
+  - Стандартный OpenHCD USB хост-контроллер
+  - Стандартный OpenHCD USB хост-контроллер
+  - Стандартный расширенный PCI - USB хост-контроллер
+  - Стандартный расширенный PCI - USB хост-контроллер
+
+cpu registers:
+eax = 0068e9f4
+ebx = ffffffff
+ecx = 0075006f
+edx = 0099bf01
+esi = 00000000
+edi = 0683fca8
+eip = 31603060
+esp = 0683f768
+ebp = 0683fcd4
+
+stack dump:
+0683f768  37 8b 40 00 90 00 69 00 - 00 00 00 00 5a ae 52 00  7.@...i.....Z.R.
+0683f778  40 4f 3b 02 7c f8 83 06 - a8 f7 83 06 b4 f7 83 06  @O;.|...........
+0683f788  00 00 00 00 00 00 00 00 - 00 00 00 00 59 b4 68 77  ............Y.hw
+0683f798  7c f8 83 06 a8 fc 83 06 - cc f8 83 06 50 f8 83 06  |...........P...
+0683f7a8  a8 fc 83 06 6d b4 68 77 - a8 fc 83 06 64 f8 83 06  ....m.hw....d...
+0683f7b8  2b b4 68 77 7c f8 83 06 - a8 fc 83 06 cc f8 83 06  +.hw|...........
+0683f7c8  50 f8 83 06 80 00 69 00 - 00 00 00 00 7c f8 83 06  P.....i.....|...
+0683f7d8  a8 fc 83 06 ce b3 68 77 - 7c f8 83 06 a8 fc 83 06  ......hw|.......
+0683f7e8  cc f8 83 06 50 f8 83 06 - 80 00 69 00 00 00 00 00  ....P.....i.....
+0683f7f8  7c f8 83 06 34 25 07 06 - b3 6c 66 77 ba 6c 66 77  |...4%...lfw.lfw
+0683f808  3f 75 d8 71 ac 00 00 00 - 56 00 00 00 b2 f8 83 06  ?u.q....V.......
+0683f818  25 00 11 00 08 f8 83 06 - 00 00 00 00 70 f8 83 06  %...........p...
+0683f828  d5 71 6a 77 0b 31 3e 00 - fe ff ff ff ba 6c 66 77  .qjw.1>......lfw
+0683f838  a4 19 6f 75 01 00 00 00 - be 01 94 09 8d 19 6f 75  ..ou..........ou
+0683f848  a8 af 6e 75 ac f8 83 06 - 46 67 40 00 72 00 00 00  ..nu....Fg@.r...
+0683f858  00 00 84 06 00 c0 83 06 - 56 00 00 00 04 fc 83 06  ........V.......
+0683f868  33 01 64 77 7c f8 83 00 - cc f8 83 06 7c f8 83 06  3.dw|.......|...
+0683f878  cc f8 83 06 de fa ed 0e - 03 00 00 00 00 00 00 00  ................
+0683f888  1f c4 6e 75 07 00 00 00 - 5a ae 52 00 40 4f 3b 02  ..nu....Z.R.@O;.
+0683f898  88 bd 3b 02 34 25 07 06 - 00 00 00 00 74 fc 83 06  ..;.4%......t...
+
+disassembling:
+00408b2c     public System.TObject.Free:      ; function entry point
+00408b2c 147   test    eax, eax
+00408b2e       jz      loc_408b37
+00408b30       mov     dl, 1
+00408b32       mov     ecx, [eax]
+00408b34     > call    dword ptr [ecx-4]
+00408b37       ret
+
+date/time         : 2013-08-27, 20:16:36, 965ms
+computer name     : ZEON
+user name         : Admin <admin>
+registered owner  : Microsoft / Microsoft
+operating system  : Windows 7 x64 Service Pack 1 build 7601
+system language   : Russian
+system up time    : 53 minutes 47 seconds
+program up time   : 5 minutes 45 seconds
+processors        : 2x AMD Phenom(tm) II X2 555 Processor
+physical memory   : 5936/8191 MB (free/total)
+free disk space   : (C:) 6,13 GB
+display mode      : 1680x1050, 32 bit
+process id        : $bd4
+allocated memory  : 63,49 MB
+executable        : MSpeech.exe
+exec. date/time   : 2013-08-16 15:21
+version           : 1.3.0.0
+compiled with     : Delphi XE4
+madExcept version : 4.0.7
+callstack crc     : $26a55d3b, $49141cdd, $2ea52a0e
+count             : 2
+exception number  : 1
+exception class   : EAuException
+exception message : Component is Busy.
+
+main thread ($da4):
+00656502 +042 MSpeech.exe  ACS_Classes    1362  +6 TAuOutput.Run
+006fbcb2 +0f6 MSpeech.exe  Main            725 +10 TMainForm.StartRecord
+006fba57 +013 MSpeech.exe  Main            704  +2 TMainForm.NULLOutDone
+00655cc6 +016 MSpeech.exe  ACS_Classes    1064  +2 TEventHandler.CallHandler
+005371f4 +128 MSpeech.exe  System.Classes          CheckSynchronize
+006451d2 +76e MSpeech.exe  Vcl.Forms               TApplication.WndProc
+0053aa40 +014 MSpeech.exe  System.Classes          StdWndProc
+759d7885 +00a USER32.dll                           DispatchMessageW
+00645b77 +0f3 MSpeech.exe  Vcl.Forms               TApplication.ProcessMessage
+00645bba +00a MSpeech.exe  Vcl.Forms               TApplication.HandleMessage
+00645ef5 +0c9 MSpeech.exe  Vcl.Forms               TApplication.Run
+75c633a8 +010 kernel32.dll                         BaseThreadInitThunk
+
+thread $cc4:
+77650136 +0e ntdll.dll     NtWaitForMultipleObjects
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $12bc (TAuThread):
+77650136 +00e ntdll.dll                               NtWaitForMultipleObjects
+756f15e3 +0fa KERNELBASE.dll                          WaitForMultipleObjectsEx
+75c61a27 +089 kernel32.dll                            WaitForMultipleObjectsEx
+004ae9de +056 MSpeech.exe    System.SyncObjs          THandleObject.WaitFor
+0065613f +017 MSpeech.exe    ACS_Classes     1224  +3 TAuThread.SoftSleep
+00656375 +1f9 MSpeech.exe    ACS_Classes     1298 +52 TAuThread.Execute
+004a548f +02b MSpeech.exe    madExcept                HookedTThreadExecute
+00537332 +042 MSpeech.exe    System.Classes           ThreadProc
+0040a720 +028 MSpeech.exe    System           147  +0 ThreadWrapper
+004a5375 +00d MSpeech.exe    madExcept                CallThreadProcSafe
+004a53da +032 MSpeech.exe    madExcept                ThreadExceptFrame
+75c633a8 +010 kernel32.dll                            BaseThreadInitThunk
+>> created by main thread ($da4) at:
+0065608c +018 MSpeech.exe    ACS_Classes     1202  +1 TAuThread.Create
+
+thread $b94 (TEventHandler):
+7764f8aa +00e ntdll.dll                               NtWaitForSingleObject
+756f1497 +092 KERNELBASE.dll                          WaitForSingleObjectEx
+75c6118f +03e kernel32.dll                            WaitForSingleObjectEx
+75c61143 +00d kernel32.dll                            WaitForSingleObject
+00457e16 +002 MSpeech.exe    System.SysUtils          WaitForSyncWaitObj
+00457f5f +01f MSpeech.exe    System.SysUtils          WaitOrSignalObj
+0040995d +065 MSpeech.exe    System           147  +0 TMonitor.Wait
+004099cc +020 MSpeech.exe    System           147  +0 TMonitor.Wait
+00537ddf +13b MSpeech.exe    System.Classes           TThread.Synchronize
+00537e75 +029 MSpeech.exe    System.Classes           TThread.Synchronize
+00655d69 +079 MSpeech.exe    ACS_Classes     1088 +15 TEventHandler.Execute
+0040a720 +028 MSpeech.exe    System           147  +0 ThreadWrapper
+004a5375 +00d MSpeech.exe    madExcept                CallThreadProcSafe
+004a53da +032 MSpeech.exe    madExcept                ThreadExceptFrame
+75c633a8 +010 kernel32.dll                            BaseThreadInitThunk
+>> created by main thread ($da4) at:
+00655adc +018 MSpeech.exe    ACS_Classes      985  +1 TEventHandler.Create
+
+thread $105c (TAuThread):
+77650136 +00e ntdll.dll                               NtWaitForMultipleObjects
+756f15e3 +0fa KERNELBASE.dll                          WaitForMultipleObjectsEx
+75c61a27 +089 kernel32.dll                            WaitForMultipleObjectsEx
+004ae9de +056 MSpeech.exe    System.SyncObjs          THandleObject.WaitFor
+0065613f +017 MSpeech.exe    ACS_Classes     1224  +3 TAuThread.SoftSleep
+00656375 +1f9 MSpeech.exe    ACS_Classes     1298 +52 TAuThread.Execute
+004a548f +02b MSpeech.exe    madExcept                HookedTThreadExecute
+00537332 +042 MSpeech.exe    System.Classes           ThreadProc
+0040a720 +028 MSpeech.exe    System           147  +0 ThreadWrapper
+004a5375 +00d MSpeech.exe    madExcept                CallThreadProcSafe
+004a53da +032 MSpeech.exe    madExcept                ThreadExceptFrame
+75c633a8 +010 kernel32.dll                            BaseThreadInitThunk
+>> created by main thread ($da4) at:
+0065608c +018 MSpeech.exe    ACS_Classes     1202  +1 TAuThread.Create
+
+thread $458: <priority:15>
+77650136 +0e ntdll.dll                NtWaitForMultipleObjects
+756f15e3 +fa KERNELBASE.dll           WaitForMultipleObjectsEx
+75c61a27 +89 kernel32.dll             WaitForMultipleObjectsEx
+75c6421b +13 kernel32.dll             WaitForMultipleObjects
+004a5375 +0d MSpeech.exe    madExcept CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept ThreadExceptFrame
+75c633a8 +10 kernel32.dll             BaseThreadInitThunk
+>> created by thread $105c (TAuThread) at:
+73fcf671 +00 dsound.dll
+
+thread $1710:
+77651df7 +0b ntdll.dll     NtTraceControl
+77687151 +40 ntdll.dll     EtwpNotificationThread
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $132c:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $13f4:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $d20:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 MSpeech.exe    1.3.0.0            C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+03cf0000 ssleay32.dll   1.0.0.3            C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+05880000 libFLAC.dll                       C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+10000000 libeay32.dll   1.0.0.3            C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+6bed0000 POWRPROF.dll   6.1.7600.16385     C:\Windows\system32
+70060000 FaultRep.dll   6.1.7601.17514     C:\Windows\system32
+70a20000 WINMM.dll      6.1.7601.17514     C:\Windows\system32
+70b60000 AUDIOSES.DLL   6.1.7601.17514     C:\Windows\system32
+70d30000 midimap.dll    6.1.7600.16385     C:\Windows\system32
+70d40000 MSACM32.dll    6.1.7600.16385     C:\Windows\system32
+70d60000 MMDevAPI.DLL   6.1.7601.17514     C:\Windows\system32
+71060000 wdmaud.drv     6.1.7601.17514     C:\Windows\system32
+710a0000 wtsapi32.dll   6.1.7601.17514     C:\Windows\system32
+71140000 dwmapi.dll     6.1.7600.16385     C:\Windows\system32
+71180000 msacm32.drv    6.1.7600.16385     C:\Windows\system32
+71190000 AVRT.dll       6.1.7600.16385     C:\Windows\system32
+72b50000 MSVCR90.dll    9.0.30729.4940     C:\Windows\WinSxS\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.4940_none_50916076bcb9a742
+730a0000 uxtheme.dll    6.1.7600.16385     C:\Windows\system32
+73170000 WINSTA.dll     6.1.7601.17514     C:\Windows\system32
+731a0000 WINNSI.DLL     6.1.7600.16385     C:\Windows\system32
+731b0000 IPHLPAPI.DLL   6.1.7601.17514     C:\Windows\system32
+731e0000 msxml6.dll     6.30.7601.17988    C:\Windows\System32
+733f0000 wshtcpip.dll   6.1.7600.16385     C:\Windows\System32
+73490000 DNSAPI.dll     6.1.7601.17570     C:\Windows\system32
+73530000 PROPSYS.dll    7.0.7601.17514     C:\Windows\system32
+73890000 wship6.dll     6.1.7600.16385     C:\Windows\System32
+738c0000 mswsock.dll    6.1.7601.17514     C:\Windows\System32
+73940000 wsock32.dll    6.1.7600.16385     C:\Windows\system32
+73ad0000 rsaenh.dll     6.1.7600.16385     C:\Windows\system32
+73b10000 CRYPTSP.dll    6.1.7600.16385     C:\Windows\system32
+73b30000 version.dll    6.1.7600.16385     C:\Windows\system32
+73b40000 comctl32.dll   6.10.7601.17514    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2
+73d00000 ntmarta.dll    6.1.7600.16385     C:\Windows\system32
+73fa0000 dsound.dll     6.1.7600.16385     C:\Windows\system32
+74270000 ksuser.dll     6.1.7600.16385     C:\Windows\system32
+74620000 winspool.drv   6.1.7601.17514     C:\Windows\system32
+74950000 rasadhlp.dll   6.1.7600.16385     C:\Windows\system32
+74960000 fwpuclnt.dll   6.1.7601.17514     C:\Windows\System32
+75180000 CRYPTBASE.dll  6.1.7600.16385     C:\Windows\syswow64
+75190000 SspiCli.dll    6.1.7601.17856     C:\Windows\syswow64
+75220000 RPCRT4.dll     6.1.7601.17514     C:\Windows\syswow64
+75310000 IMM32.DLL      6.1.7601.17514     C:\Windows\system32
+75370000 WLDAP32.dll    6.1.7601.17514     C:\Windows\syswow64
+753c0000 ole32.dll      6.1.7601.17514     C:\Windows\syswow64
+75540000 SETUPAPI.dll   6.1.7601.17514     C:\Windows\syswow64
+756e0000 KERNELBASE.dll 6.1.7601.17965     C:\Windows\syswow64
+757a0000 CFGMGR32.dll   6.1.7601.17621     C:\Windows\syswow64
+757d0000 sechost.dll    6.1.7600.16385     C:\Windows\SysWOW64
+75930000 GDI32.dll      6.1.7601.17514     C:\Windows\syswow64
+759c0000 USER32.dll     6.1.7601.17514     C:\Windows\syswow64
+75ac0000 NSI.dll        6.1.7600.16385     C:\Windows\syswow64
+75ad0000 msvcrt.dll     7.0.7601.17744     C:\Windows\syswow64
+75b80000 OLEAUT32.dll   6.1.7601.17676     C:\Windows\syswow64
+75c10000 WS2_32.dll     6.1.7601.17514     C:\Windows\syswow64
+75c50000 kernel32.dll   6.1.7601.17965     C:\Windows\syswow64
+75d60000 CLBCatQ.DLL    2001.12.8530.16385 C:\Windows\syswow64
+75df0000 SHLWAPI.dll    6.1.7601.17514     C:\Windows\syswow64
+75e50000 USP10.dll      1.626.7601.17514   C:\Windows\syswow64
+760f0000 DEVOBJ.dll     6.1.7601.17621     C:\Windows\syswow64
+76110000 MSCTF.dll      6.1.7600.16385     C:\Windows\syswow64
+761e0000 comdlg32.dll   6.1.7601.17514     C:\Windows\syswow64
+762f0000 SHELL32.dll    6.1.7601.17514     C:\Windows\syswow64
+77190000 advapi32.dll   6.1.7601.17514     C:\Windows\syswow64
+77600000 LPK.dll        6.1.7600.16385     C:\Windows\syswow64
+77630000 ntdll.dll      6.1.7601.17725     C:\Windows\SysWOW64
+
+processes:
+0000 Idle                           0 0   0
+0004 System                         0 0   0
+0140 smss.exe                       0 0   0
+018c csrss.exe                      0 0   0
+01d8 wininit.exe                    0 0   0
+01e4 csrss.exe                      1 0   0
+020c services.exe                   0 0   0
+0220 lsass.exe                      0 0   0
+0228 lsm.exe                        0 0   0
+0264 winlogon.exe                   1 0   0
+02b8 svchost.exe                    0 0   0
+0304 svchost.exe                    0 0   0
+0340 MsMpEng.exe                    0 0   0
+03b8 atiesrxx.exe                   0 0   0
+03e0 svchost.exe                    0 0   0
+0070 svchost.exe                    0 0   0
+0168 svchost.exe                    0 0   0
+0288 audiodg.exe                    0 0   0
+041c svchost.exe                    0 0   0
+0440 atieclxx.exe                   1 0   0
+04bc svchost.exe                    0 0   0
+0620 spoolsv.exe                    0 0   0
+068c taskhost.exe                   1 26  24  normal
+06c4 svchost.exe                    0 0   0
+0734 ACService.exe                  0 0   0
+0784 Fuel.Service.exe               0 0   0
+07c0 taskeng.exe                    1 10  3   normal
+04dc MSIAfterburner.exe             1 85  34  below normal C:\Program Files (x86)\MSI Afterburner
+0680 GoogleCrashHandler.exe         0 0   0
+0674 GoogleCrashHandler64.exe       0 0   0
+0774 mounter.exe                    0 0   0
+07b0 svchost.exe                    0 0   0
+0808 raysat_3dsmax2012_64server.exe 0 0   0
+0830 QipGuard.exe                   0 0   0
+0850 SeaPort.exe                    0 0   0
+0884 svchost.exe                    0 0   0
+08dc R2PCServ.exe                   0 0   0
+0900 R2PCServ.exe                   1 0   0
+0acc NisSrv.exe                     0 0   0
+0b20 svchost.exe                    0 0   0
+08a8 dwm.exe                        1 17  2   high
+0aa8 explorer.exe                   1 594 299 normal
+0b14 msseces.exe                    1 143 59  normal
+0be0 ScanToPCActivationApp.exe      1 31  26  normal
+0638 googledrivesync.exe            1 4   1   normal       C:\Program Files (x86)\Google\Drive
+0c58 R2PCSH.exe                     1 0   0
+0d68 googledrivesync.exe            1 62  32  normal       C:\Program Files (x86)\Google\Drive
+0db8 SearchIndexer.exe              0 0   0
+0de0 jusched.exe                    1 9   2   normal       C:\Program Files (x86)\Common Files\Java\Java Update
+0dec hpwuschd2.exe                  1 9   4   normal       C:\Program Files (x86)\HP\HP Software Update
+0e04 Updater.exe                    1 9   5   normal       C:\Program Files (x86)\Ask.com\Updater
+0e14 ACDaemon.exe                   1 9   6   normal       C:\Program Files (x86)\Common Files\ArcSoft\Connection Service\Bin
+0e48 CoinChanger.exe                1 37  26  normal       C:\cgminer_litecoin
+0e60 cmd.exe                        1 4   1   normal
+0e6c conhost.exe                    1 32  15  normal
+0e98 MOM.exe                        1 10  10  normal
+0ea4 cmd.exe                        1 4   1   normal
+0ed4 cgminer.exe                    1 4   6   realtime     C:\cgminer_litecoin
+0ee8 conhost.exe                    1 26  13  normal
+0f98 CCC.exe                        1 103 67  normal
+0cd8 HPNetworkCommunicator.exe      1 9   1   normal
+00b4 Totalcmd.exe                   1 284 165 normal       C:\Program Files (x86)\TC
+1064 Tcmdx64.exe                    1 67  13  normal
+0d80 jucheck.exe                    1 12  6   normal       C:\Program Files (x86)\Common Files\Java\Java Update
+1684 mswinext.exe                   1 11  22  normal       C:\Program Files (x86)\MSN Toolbar\Platform\6.3.2291.0
+17c0 chrome.exe                     1 200 85  normal       C:\Program Files (x86)\Google\Chrome\Application
+17e4 chrome.exe                     1 13  3   normal       C:\Program Files (x86)\Google\Chrome\Application
+124c chrome.exe                     1 21  1   below normal C:\Program Files (x86)\Google\Chrome\Application
+0f90 chrome.exe                     1 86  1   below normal C:\Program Files (x86)\Google\Chrome\Application
+1260 chrome.exe                     1 30  1   below normal C:\Program Files (x86)\Google\Chrome\Application
+0a74 chrome.exe                     1 166 1   below normal C:\Program Files (x86)\Google\Chrome\Application
+1030 taskmgr.exe                    1 115 105 high
+119c chrome.exe                     1 174 1   below normal C:\Program Files (x86)\Google\Chrome\Application
+10a4 chrome.exe                     1 67  1   normal       C:\Program Files (x86)\Google\Chrome\Application
+0bd4 MSpeech.exe                    1 144 107 normal       C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+
+hardware:
++ Computer
+  - ACPI x64-based PC
++ Disk drives
+  - WDC WD25 00AAKS-00VSA SCSI Disk Device
++ Display adapters
+  - AMD Radeon HD 7900 Series (driver 12.104.0.0)
++ DVD/CD-ROM drives
+  - Optiarc DVD RW AD-5260S SCSI CdRom Device
++ Human Interface Devices
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство управления
+  - USB-устройство ввода
+  - USB-устройство ввода
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - NVIDIA nForce Serial ATA Controller (driver 11.1.0.33)
+  - Стандартный двухканальный контроллер PCI IDE
++ Imaging devices
+  - HP Photosmart 7510 series (NET) (driver 9.0.0.0)
++ Keyboards
+  - Клавиатура HID
+  - Стандартная клавиатура PS/2
++ Mice and other pointing devices
+  - HID-совместимая мышь
++ Monitors
+  - Универсальный монитор PnP
++ Network adapters
+  - Teredo Tunneling Pseudo-Interface
+  - WAN Miniport (IKEv2)
+  - Адаптер Microsoft ISATAP
+  - Адаптер Microsoft ISATAP #2
+  - Мини-порт WAN (SSTP)
+  - Минипорт WAN (IP)
+  - Минипорт WAN (IPv6)
+  - Минипорт WAN (L2TP)
+  - Минипорт WAN (PPPoE)
+  - Минипорт WAN (PPTP)
+  - Минипорт WAN (Сетевой монитор)
+  - Сетевой контроллер NVIDIA nForce
++ Ports (COM & LPT)
+  - Последовательный порт (COM1)
++ Printers
+  - HP Photosmart 7510 series (driver 6.64.0.986)
++ Processors
+  - AMD Phenom(tm) II X2 555 Processor
+  - AMD Phenom(tm) II X2 555 Processor
++ Sound, video and game controllers
+  - AMD High Definition Audio Device (driver 7.12.0.7714)
+  - SB Live! 24-bit (driver 5.12.1.2004)
+  - USB 2861 Device (driver 5.2009.1202.0)
+  - Аудио устройства USB
++ Storage volume shadow copies
+  - Универсальная теневая копия тома
+  - Универсальная теневая копия тома
+  - Универсальная теневая копия тома
+  - Универсальная теневая копия тома
++ System devices
+  - AMD IO Driver (driver 1.0.0.15)
+  - CMOS и часы
+  - Microsoft ACPI-совместимая система
+  - Microsoft System Management BIOS драйвер
+  - Remote Desktop Device Redirector Bus
+  - UMBus перечислитель
+  - UMBus перечислитель корневой шины
+  - Арифметический сопроцессор
+  - Встроенный динамик
+  - Диспетчер томов
+  - Драйвер клавиатуры сервера терминалов
+  - Драйвер мыши сервера терминалов
+  - Драйвер перечислителя виртуальных дисков (Майкрософт)
+  - Драйвер файла в качестве тома
+  - Кнопка питания ACPI
+  - Контроллер High Definition Audio (Microsoft)
+  - Контроллер прямого доступа к памяти
+  - Перечислитель композитной шины
+  - Перечислитель программных устройств Plug and Play
+  - Программируемый контроллер прерываний
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Системная плата
+  - Системный таймер
+  - Стандартный PCI-контроллер RAM
+  - Стандартный PCI-контроллер RAM
+  - Стандартный PCI-контроллер RAM
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI - ISA
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Фиксированная функциональная кнопка ACPI
+  - Шина NVIDIA nForce PCI System Management
+  - Шина PCI
++ Universal Serial Bus controllers
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Составное USB устройство
+  - Составное USB устройство
+  - Стандартный OpenHCD USB хост-контроллер
+  - Стандартный OpenHCD USB хост-контроллер
+  - Стандартный расширенный PCI - USB хост-контроллер
+  - Стандартный расширенный PCI - USB хост-контроллер
+
+cpu registers:
+eax = 02634f40
+ebx = 0264e110
+ecx = 00000000
+edx = 009541c8
+esi = 0265df20
+edi = 02641730
+eip = 00656507
+esp = 0018fc78
+ebp = 0018fcb0
+
+stack dump:
+0018fc78  07 65 65 00 de fa ed 0e - 01 00 00 00 07 00 00 00  .ee.............
+0018fc88  8c fc 18 00 07 65 65 00 - 40 4f 63 02 10 e1 64 02  .....ee.@Oc...d.
+0018fc98  20 df 65 02 30 17 64 02 - b0 fc 18 00 a8 fc 18 00   .e.0.d.........
+0018fca8  10 e1 64 02 f0 ac 5d 02 - 04 fd 18 00 b7 bc 6f 00  ..d...].......o.
+0018fcb8  18 fd 18 00 14 9e 40 00 - 04 fd 18 00 00 00 00 00  ......@.........
+0018fcc8  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0018fcd8  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0018fce8  00 00 00 00 00 00 00 00 - 00 39 5b 02 00 00 00 00  .........9[.....
+0018fcf8  00 00 00 00 00 00 00 00 - 00 00 00 00 68 fd 18 00  ............h...
+0018fd08  5c ba 6f 00 c9 5c 65 00 - 30 0d 64 02 f7 71 53 00  \.o..\e.0.d..qS.
+0018fd18  24 fd 18 00 e4 9b 40 00 - 68 fd 18 00 30 fd 18 00  $.....@.h...0...
+0018fd28  65 72 53 00 68 fd 18 00 - 3c fd 18 00 bd 72 53 00  erS.h...<....rS.
+0018fd38  68 fd 18 00 70 fd 18 00 - dc 72 53 00 68 fd 18 00  h...p....rS.h...
+0018fd48  30 17 64 02 01 00 00 00 - 00 00 00 00 00 00 00 00  0.d.............
+0018fd58  e7 0f 3c 00 30 be 63 02 - 8c fe 60 05 01 00 00 01  ..<.0.c...`.....
+0018fd68  d0 fd 18 00 d7 51 64 00 - 7c fe 18 00 f6 51 64 00  .....Qd.|....Qd.
+0018fd78  d0 fd 18 00 00 00 00 00 - e2 0f 3c 00 00 00 00 00  ..........<.....
+0018fd88  30 a5 f0 00 24 00 00 00 - 01 00 00 00 00 00 00 00  0...$...........
+0018fd98  00 00 00 00 70 00 00 00 - ff ff ff ff ff ff ff ff  ....p...........
+0018fda8  e9 6c 9d 75 91 6d 9d 75 - 00 00 00 00 01 00 00 00  .l.u.m.u........
+
+disassembling:
+[...]
+006564ee        call    dword ptr [edx+4]
+006564f1 1362   mov     ecx, $65659c
+006564f6        mov     dl, 1
+006564f8        mov     eax, [$653e3c]
+006564fd        call    -$1ff446 ($4570bc)     ; System.SysUtils.Exception.Create
+00656502      > call    -$24c5cf ($409f38)     ; System.@RaiseExcept
+00656507 1364   mov     eax, [ebp-4]
+0065650a        mov     byte ptr [eax+$68], 1
+0065650e 1365   mov     eax, [ebp-4]
+00656511        cmp     dword ptr [eax+$4c], 0
+00656515        jnz     loc_656538
+[...]
+
+date/time         : 2013-08-27, 22:47:57, 375ms
+computer name     : ZEON
+user name         : Admin <admin>
+registered owner  : Microsoft / Microsoft
+operating system  : Windows 7 x64 Service Pack 1 build 7601
+system language   : Russian
+system up time    : 3 hours 25 minutes
+program up time   : 46 seconds
+processors        : 2x AMD Phenom(tm) II X2 555 Processor
+physical memory   : 5670/8191 MB (free/total)
+free disk space   : (C:) 6,40 GB
+display mode      : 1680x1050, 32 bit
+process id        : $11ac
+allocated memory  : 63,71 MB
+executable        : MSpeech.exe
+exec. date/time   : 2013-08-16 15:21
+version           : 1.3.0.0
+compiled with     : Delphi XE4
+madExcept version : 4.0.7
+callstack crc     : $af5a44f4, $dd4a12c6, $bcdf8769
+count             : 5
+exception number  : 1
+exception class   : EAccessViolation
+exception message : Access violation at address 005263F3 in module 'MSpeech.exe'. Read of address 00000000.
+
+main thread ($b50):
+005263f3 +00b MSpeech.exe  System.Classes         TStream.SetPosition
+0052a3cf +037 MSpeech.exe  System.Classes         TStream.CopyFrom
+006fd795 +259 MSpeech.exe  Main           937 +24 TMainForm.HTTPPostFile
+006fc35c +2a0 MSpeech.exe  Main           777 +19 TMainForm.JvThreadRecognizeExecute
+006f65f0 +070 MSpeech.exe  JvThread               TJvBaseThread.Execute
+004a548f +02b MSpeech.exe  madExcept              HookedTThreadExecute
+00537332 +042 MSpeech.exe  System.Classes         ThreadProc
+0040a720 +028 MSpeech.exe  System         147  +0 ThreadWrapper
+004a5375 +00d MSpeech.exe  madExcept              CallThreadProcSafe
+004a53da +032 MSpeech.exe  madExcept              ThreadExceptFrame
+75c633a8 +010 kernel32.dll                        BaseThreadInitThunk
+
+thread $c84:
+77650136 +0e ntdll.dll     NtWaitForMultipleObjects
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1494:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $15a0 (TAuThread):
+7764fd6a +0e ntdll.dll                               NtDelayExecution
+756f3bc2 +5f KERNELBASE.dll                          SleepEx
+756f4493 +0a KERNELBASE.dll                          Sleep
+0065cee8 +94 MSpeech.exe    ACS_DXAudio      658 +12 TDXAudioIn.GetDataInternal
+0065604a +2e MSpeech.exe    ACS_Classes     1194  +3 TAuInput.GetData
+00657405 +25 MSpeech.exe    NewACIndicators  282  +2 TFastGainIndicator.GetDataInternal
+00656e11 +41 MSpeech.exe    ACS_Classes     2139  +9 TAuConverter.GetData
+00656ae0 +30 MSpeech.exe    ACS_Classes     1842  +7 TAuInput.FillBuffer
+0065b212 +42 MSpeech.exe    ACS_FLAC         821  +8 TFLACOut.DoOutput
+0065625a +de MSpeech.exe    ACS_Classes     1274 +28 TAuThread.Execute
+0040a720 +28 MSpeech.exe    System           147  +0 ThreadWrapper
+004a5375 +0d MSpeech.exe    madExcept                CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept                ThreadExceptFrame
+75c633a8 +10 kernel32.dll                            BaseThreadInitThunk
+>> created by main thread ($b50) at:
+0065608c +18 MSpeech.exe    ACS_Classes     1202  +1 TAuThread.Create
+
+thread $15c8 (TEventHandler):
+77650136 +0e ntdll.dll                               NtWaitForMultipleObjects
+756f15e3 +fa KERNELBASE.dll                          WaitForMultipleObjectsEx
+75c61a27 +89 kernel32.dll                            WaitForMultipleObjectsEx
+004ae9de +56 MSpeech.exe    System.SyncObjs          THandleObject.WaitFor
+00655dad +bd MSpeech.exe    ACS_Classes     1097 +24 TEventHandler.Execute
+0040a720 +28 MSpeech.exe    System           147  +0 ThreadWrapper
+004a5375 +0d MSpeech.exe    madExcept                CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept                ThreadExceptFrame
+75c633a8 +10 kernel32.dll                            BaseThreadInitThunk
+>> created by main thread ($b50) at:
+00655adc +18 MSpeech.exe    ACS_Classes      985  +1 TEventHandler.Create
+
+thread $11f8 (TAuThread):
+77650136 +00e ntdll.dll                               NtWaitForMultipleObjects
+756f15e3 +0fa KERNELBASE.dll                          WaitForMultipleObjectsEx
+75c61a27 +089 kernel32.dll                            WaitForMultipleObjectsEx
+004ae9de +056 MSpeech.exe    System.SyncObjs          THandleObject.WaitFor
+0065613f +017 MSpeech.exe    ACS_Classes     1224  +3 TAuThread.SoftSleep
+00656375 +1f9 MSpeech.exe    ACS_Classes     1298 +52 TAuThread.Execute
+004a548f +02b MSpeech.exe    madExcept                HookedTThreadExecute
+00537332 +042 MSpeech.exe    System.Classes           ThreadProc
+0040a720 +028 MSpeech.exe    System           147  +0 ThreadWrapper
+004a5375 +00d MSpeech.exe    madExcept                CallThreadProcSafe
+004a53da +032 MSpeech.exe    madExcept                ThreadExceptFrame
+75c633a8 +010 kernel32.dll                            BaseThreadInitThunk
+>> created by main thread ($b50) at:
+0065608c +018 MSpeech.exe    ACS_Classes     1202  +1 TAuThread.Create
+
+thread $a30: <priority:15>
+77650136 +0e ntdll.dll                NtWaitForMultipleObjects
+756f15e3 +fa KERNELBASE.dll           WaitForMultipleObjectsEx
+75c61a27 +89 kernel32.dll             WaitForMultipleObjectsEx
+75c6421b +13 kernel32.dll             WaitForMultipleObjects
+004a5375 +0d MSpeech.exe    madExcept CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept ThreadExceptFrame
+75c633a8 +10 kernel32.dll             BaseThreadInitThunk
+>> created by thread $11f8 (TAuThread) at:
+6998f671 +00 dsound.dll
+
+thread $146c:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $b7c:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $9b8:
+77651df7 +0b ntdll.dll     NtTraceControl
+77687151 +40 ntdll.dll     EtwpNotificationThread
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $13c8:
+77651f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75c633a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1130 (TJvBaseThread):
+7764f8aa +00e ntdll.dll                             NtWaitForSingleObject
+756f1497 +092 KERNELBASE.dll                        WaitForSingleObjectEx
+75c6118f +03e kernel32.dll                          WaitForSingleObjectEx
+75c61143 +00d kernel32.dll                          WaitForSingleObject
+00457e16 +002 MSpeech.exe    System.SysUtils        WaitForSyncWaitObj
+00457f5f +01f MSpeech.exe    System.SysUtils        WaitOrSignalObj
+0040995d +065 MSpeech.exe    System          147 +0 TMonitor.Wait
+004099cc +020 MSpeech.exe    System          147 +0 TMonitor.Wait
+00537ddf +13b MSpeech.exe    System.Classes         TThread.Synchronize
+00537e75 +029 MSpeech.exe    System.Classes         TThread.Synchronize
+006f6685 +009 MSpeech.exe    JvThread               TJvBaseThread.Synchronize
+006f664d +0cd MSpeech.exe    JvThread               TJvBaseThread.Execute
+7764012e +00a ntdll.dll                             KiUserExceptionDispatcher
+006f65f0 +070 MSpeech.exe    JvThread               TJvBaseThread.Execute
+004a548f +02b MSpeech.exe    madExcept              HookedTThreadExecute
+00537332 +042 MSpeech.exe    System.Classes         ThreadProc
+0040a720 +028 MSpeech.exe    System          147 +0 ThreadWrapper
+004a5375 +00d MSpeech.exe    madExcept              CallThreadProcSafe
+004a53da +032 MSpeech.exe    madExcept              ThreadExceptFrame
+75c633a8 +010 kernel32.dll                          BaseThreadInitThunk
+>> created by main thread ($b50) at:
+006f676e +02e MSpeech.exe    JvThread               TJvPausableThread.Create
+
+thread $13bc: <priority:-3>
+77650136 +0e ntdll.dll                NtWaitForMultipleObjects
+756f15e3 +fa KERNELBASE.dll           WaitForMultipleObjectsEx
+75c61a27 +89 kernel32.dll             WaitForMultipleObjectsEx
+004a5375 +0d MSpeech.exe    madExcept CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept ThreadExceptFrame
+75c633a8 +10 kernel32.dll             BaseThreadInitThunk
+>> created by thread $15a0 (TAuThread) at:
+71065342 +00 wdmaud.drv
+
+thread $580: <priority:15>
+77650136 +0e ntdll.dll                NtWaitForMultipleObjects
+756f15e3 +fa KERNELBASE.dll           WaitForMultipleObjectsEx
+75c61a27 +89 kernel32.dll             WaitForMultipleObjectsEx
+75c6421b +13 kernel32.dll             WaitForMultipleObjects
+004a5375 +0d MSpeech.exe    madExcept CallThreadProcSafe
+004a53da +32 MSpeech.exe    madExcept ThreadExceptFrame
+75c633a8 +10 kernel32.dll             BaseThreadInitThunk
+>> created by thread $15a0 (TAuThread) at:
+699b505b +00 dsound.dll
+
+modules:
+00400000 MSpeech.exe    1.3.0.0            C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+03c70000 ssleay32.dll   1.0.0.3            C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+05820000 libFLAC.dll                       C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+10000000 libeay32.dll   1.0.0.3            C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+69960000 dsound.dll     6.1.7600.16385     C:\Windows\system32
+69c10000 FaultRep.dll   6.1.7601.17514     C:\Windows\system32
+70a20000 WINMM.dll      6.1.7601.17514     C:\Windows\system32
+70b60000 AUDIOSES.DLL   6.1.7601.17514     C:\Windows\system32
+70d30000 midimap.dll    6.1.7600.16385     C:\Windows\system32
+70d40000 MSACM32.dll    6.1.7600.16385     C:\Windows\system32
+70d60000 MMDevAPI.DLL   6.1.7601.17514     C:\Windows\system32
+71060000 wdmaud.drv     6.1.7601.17514     C:\Windows\system32
+710a0000 wtsapi32.dll   6.1.7601.17514     C:\Windows\system32
+71140000 dwmapi.dll     6.1.7600.16385     C:\Windows\system32
+71180000 msacm32.drv    6.1.7600.16385     C:\Windows\system32
+71190000 AVRT.dll       6.1.7600.16385     C:\Windows\system32
+72b50000 MSVCR90.dll    9.0.30729.4940     C:\Windows\WinSxS\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.4940_none_50916076bcb9a742
+730a0000 uxtheme.dll    6.1.7600.16385     C:\Windows\system32
+73170000 WINSTA.dll     6.1.7601.17514     C:\Windows\system32
+731e0000 msxml6.dll     6.30.7601.17988    C:\Windows\System32
+73530000 PROPSYS.dll    7.0.7601.17514     C:\Windows\system32
+73940000 wsock32.dll    6.1.7600.16385     C:\Windows\system32
+73ad0000 rsaenh.dll     6.1.7600.16385     C:\Windows\system32
+73b10000 CRYPTSP.dll    6.1.7600.16385     C:\Windows\system32
+73b30000 version.dll    6.1.7600.16385     C:\Windows\system32
+73b40000 comctl32.dll   6.10.7601.17514    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2
+73d00000 ntmarta.dll    6.1.7600.16385     C:\Windows\system32
+74230000 POWRPROF.dll   6.1.7600.16385     C:\Windows\system32
+74270000 ksuser.dll     6.1.7600.16385     C:\Windows\system32
+74620000 winspool.drv   6.1.7601.17514     C:\Windows\system32
+75180000 CRYPTBASE.dll  6.1.7600.16385     C:\Windows\syswow64
+75190000 SspiCli.dll    6.1.7601.17856     C:\Windows\syswow64
+75220000 RPCRT4.dll     6.1.7601.17514     C:\Windows\syswow64
+75310000 IMM32.DLL      6.1.7601.17514     C:\Windows\system32
+75370000 WLDAP32.dll    6.1.7601.17514     C:\Windows\syswow64
+753c0000 ole32.dll      6.1.7601.17514     C:\Windows\syswow64
+75540000 SETUPAPI.dll   6.1.7601.17514     C:\Windows\syswow64
+756e0000 KERNELBASE.dll 6.1.7601.17965     C:\Windows\syswow64
+757a0000 CFGMGR32.dll   6.1.7601.17621     C:\Windows\syswow64
+757d0000 sechost.dll    6.1.7600.16385     C:\Windows\SysWOW64
+75930000 GDI32.dll      6.1.7601.17514     C:\Windows\syswow64
+759c0000 USER32.dll     6.1.7601.17514     C:\Windows\syswow64
+75ac0000 NSI.dll        6.1.7600.16385     C:\Windows\syswow64
+75ad0000 msvcrt.dll     7.0.7601.17744     C:\Windows\syswow64
+75b80000 OLEAUT32.dll   6.1.7601.17676     C:\Windows\syswow64
+75c10000 WS2_32.dll     6.1.7601.17514     C:\Windows\syswow64
+75c50000 kernel32.dll   6.1.7601.17965     C:\Windows\syswow64
+75d60000 CLBCatQ.DLL    2001.12.8530.16385 C:\Windows\syswow64
+75df0000 SHLWAPI.dll    6.1.7601.17514     C:\Windows\syswow64
+75e50000 USP10.dll      1.626.7601.17514   C:\Windows\syswow64
+760f0000 DEVOBJ.dll     6.1.7601.17621     C:\Windows\syswow64
+76110000 MSCTF.dll      6.1.7600.16385     C:\Windows\syswow64
+761e0000 comdlg32.dll   6.1.7601.17514     C:\Windows\syswow64
+762f0000 SHELL32.dll    6.1.7601.17514     C:\Windows\syswow64
+77190000 advapi32.dll   6.1.7601.17514     C:\Windows\syswow64
+77600000 LPK.dll        6.1.7600.16385     C:\Windows\syswow64
+77630000 ntdll.dll      6.1.7601.17725     C:\Windows\SysWOW64
+
+processes:
+0000 Idle                           0 0   0
+0004 System                         0 0   0
+0140 smss.exe                       0 0   0
+018c csrss.exe                      0 0   0
+01d8 wininit.exe                    0 0   0
+01e4 csrss.exe                      1 0   0
+020c services.exe                   0 0   0
+0220 lsass.exe                      0 0   0
+0228 lsm.exe                        0 0   0
+0264 winlogon.exe                   1 0   0
+02b8 svchost.exe                    0 0   0
+0304 svchost.exe                    0 0   0
+0340 MsMpEng.exe                    0 0   0
+03b8 atiesrxx.exe                   0 0   0
+03e0 svchost.exe                    0 0   0
+0070 svchost.exe                    0 0   0
+0168 svchost.exe                    0 0   0
+041c svchost.exe                    0 0   0
+0440 atieclxx.exe                   1 0   0
+04bc svchost.exe                    0 0   0
+0620 spoolsv.exe                    0 0   0
+068c taskhost.exe                   1 26  21  normal
+06c4 svchost.exe                    0 0   0
+0734 ACService.exe                  0 0   0
+0784 Fuel.Service.exe               0 0   0
+07c0 taskeng.exe                    1 10  3   normal
+04dc MSIAfterburner.exe             1 85  34  below normal C:\Program Files (x86)\MSI Afterburner
+0680 GoogleCrashHandler.exe         0 0   0
+0674 GoogleCrashHandler64.exe       0 0   0
+0774 mounter.exe                    0 0   0
+07b0 svchost.exe                    0 0   0
+0808 raysat_3dsmax2012_64server.exe 0 0   0
+0830 QipGuard.exe                   0 0   0
+0850 SeaPort.exe                    0 0   0
+0884 svchost.exe                    0 0   0
+08dc R2PCServ.exe                   0 0   0
+0900 R2PCServ.exe                   1 0   0
+0acc NisSrv.exe                     0 0   0
+0b20 svchost.exe                    0 0   0
+08a8 dwm.exe                        1 17  2   high
+0aa8 explorer.exe                   1 697 330 normal
+0b14 msseces.exe                    1 143 59  normal
+0be0 ScanToPCActivationApp.exe      1 31  26  normal
+0c58 R2PCSH.exe                     1 0   0
+0db8 SearchIndexer.exe              0 0   0
+0de0 jusched.exe                    1 9   2   normal       C:\Program Files (x86)\Common Files\Java\Java Update
+0dec hpwuschd2.exe                  1 9   4   normal       C:\Program Files (x86)\HP\HP Software Update
+0e04 Updater.exe                    1 9   5   normal       C:\Program Files (x86)\Ask.com\Updater
+0e14 ACDaemon.exe                   1 9   6   normal       C:\Program Files (x86)\Common Files\ArcSoft\Connection Service\Bin
+0e48 CoinChanger.exe                1 37  26  normal       C:\cgminer_litecoin
+0e60 cmd.exe                        1 4   1   normal
+0e6c conhost.exe                    1 32  15  normal
+0e98 MOM.exe                        1 10  10  normal
+0ea4 cmd.exe                        1 4   1   normal
+0ed4 cgminer.exe                    1 4   6   realtime     C:\cgminer_litecoin
+0ee8 conhost.exe                    1 26  13  normal
+0f98 CCC.exe                        1 133 67  normal
+0cd8 HPNetworkCommunicator.exe      1 9   1   normal
+00b4 Totalcmd.exe                   1 297 167 normal       C:\Program Files (x86)\TC
+1064 Tcmdx64.exe                    1 67  13  normal
+0d80 jucheck.exe                    1 12  6   normal       C:\Program Files (x86)\Common Files\Java\Java Update
+1684 mswinext.exe                   1 11  22  normal       C:\Program Files (x86)\MSN Toolbar\Platform\6.3.2291.0
+1030 taskmgr.exe                    1 115 105 high
+134c chrome.exe                     1 281 104 normal       C:\Program Files (x86)\Google\Chrome\Application
+1588 chrome.exe                     1 13  3   normal       C:\Program Files (x86)\Google\Chrome\Application
+140c chrome.exe                     1 303 1   below normal C:\Program Files (x86)\Google\Chrome\Application
+13dc chrome.exe                     1 151 1   below normal C:\Program Files (x86)\Google\Chrome\Application
+12cc chrome.exe                     1 25  1   below normal C:\Program Files (x86)\Google\Chrome\Application
+12e0 chrome.exe                     1 19  1   below normal C:\Program Files (x86)\Google\Chrome\Application
+0750 chrome.exe                     1 173 1   below normal C:\Program Files (x86)\Google\Chrome\Application
+09ac chrome.exe                     1 42  1   normal       C:\Program Files (x86)\Google\Chrome\Application
+105c chrome.exe                     1 72  1   below normal C:\Program Files (x86)\Google\Chrome\Application
+0fc4 audiodg.exe                    0 0   0
+175c WUDFHost.exe                   0 0   0
+17c4 chrome.exe                     1 327 1   below normal C:\Program Files (x86)\Google\Chrome\Application
+1654 chrome.exe                     1 406 1   normal       C:\Program Files (x86)\Google\Chrome\Application
+1160 audiorepeater.exe              1 20  93  normal
+1784 vsthost.exe                    1 212 188 normal
+14d8 vsthostBridge32.exe            1 68  50  normal       C:\Documents and Settings\Admin\Google Диск\SAVIHost
+11ac MSpeech.exe                    1 141 107 normal       C:\Documents and Settings\Admin\Google Диск\Delphi Projects\MSpeechRelease
+
+hardware:
++ Computer
+  - ACPI x64-based PC
++ Disk drives
+  - Kingmax USB2.0 FlashDisk USB Device
+  - WDC WD25 00AAKS-00VSA SCSI Disk Device
++ Display adapters
+  - AMD Radeon HD 7900 Series (driver 12.104.0.0)
++ DVD/CD-ROM drives
+  - Optiarc DVD RW AD-5260S SCSI CdRom Device
++ Human Interface Devices
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство управления
+  - USB-устройство ввода
+  - USB-устройство ввода
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - NVIDIA nForce Serial ATA Controller (driver 11.1.0.33)
+  - Стандартный двухканальный контроллер PCI IDE
++ Imaging devices
+  - HP Photosmart 7510 series (NET) (driver 9.0.0.0)
++ Keyboards
+  - Клавиатура HID
+  - Стандартная клавиатура PS/2
++ Mice and other pointing devices
+  - HID-совместимая мышь
++ Monitors
+  - Универсальный монитор PnP
++ Network adapters
+  - Teredo Tunneling Pseudo-Interface
+  - WAN Miniport (IKEv2)
+  - Адаптер Microsoft ISATAP
+  - Адаптер Microsoft ISATAP #2
+  - Мини-порт WAN (SSTP)
+  - Минипорт WAN (IP)
+  - Минипорт WAN (IPv6)
+  - Минипорт WAN (L2TP)
+  - Минипорт WAN (PPPoE)
+  - Минипорт WAN (PPTP)
+  - Минипорт WAN (Сетевой монитор)
+  - Сетевой контроллер NVIDIA nForce
++ Portable Devices
+  - GRMCULF(X)R
++ Ports (COM & LPT)
+  - Последовательный порт (COM1)
++ Printers
+  - HP Photosmart 7510 series (driver 6.64.0.986)
++ Processors
+  - AMD Phenom(tm) II X2 555 Processor
+  - AMD Phenom(tm) II X2 555 Processor
++ Sound, video and game controllers
+  - AMD High Definition Audio Device (driver 7.12.0.7714)
+  - SB Live! 24-bit (driver 5.12.1.2004)
+  - Virtual Audio Cable (driver 4.12.0.4974)
++ Storage volume shadow copies
+  - Универсальная теневая копия тома
+  - Универсальная теневая копия тома
+  - Универсальная теневая копия тома
+  - Универсальная теневая копия тома
+  - Универсальная теневая копия тома
++ System devices
+  - AMD IO Driver (driver 1.0.0.15)
+  - CMOS и часы
+  - Microsoft ACPI-совместимая система
+  - Microsoft System Management BIOS драйвер
+  - Remote Desktop Device Redirector Bus
+  - UMBus перечислитель
+  - UMBus перечислитель
+  - UMBus перечислитель корневой шины
+  - Арифметический сопроцессор
+  - Встроенный динамик
+  - Диспетчер томов
+  - Драйвер клавиатуры сервера терминалов
+  - Драйвер мыши сервера терминалов
+  - Драйвер перечислителя виртуальных дисков (Майкрософт)
+  - Драйвер файла в качестве тома
+  - Кнопка питания ACPI
+  - Контроллер High Definition Audio (Microsoft)
+  - Контроллер прямого доступа к памяти
+  - Перечислитель композитной шины
+  - Перечислитель программных устройств Plug and Play
+  - Программируемый контроллер прерываний
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Системная плата
+  - Системный таймер
+  - Стандартный PCI-контроллер RAM
+  - Стандартный PCI-контроллер RAM
+  - Стандартный PCI-контроллер RAM
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI - ISA
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Стандартный мост PCI - PCI
+  - Фиксированная функциональная кнопка ACPI
+  - Шина NVIDIA nForce PCI System Management
+  - Шина PCI
++ Universal Serial Bus controllers
+  - Запоминающее устройство для USB
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Составное USB устройство
+  - Стандартный OpenHCD USB хост-контроллер
+  - Стандартный OpenHCD USB хост-контроллер
+  - Стандартный расширенный PCI - USB хост-контроллер
+  - Стандартный расширенный PCI - USB хост-контроллер
+
+cpu registers:
+eax = 00000000
+ebx = 00505c10
+ecx = 00000000
+edx = 00000000
+esi = 00000000
+edi = 00000000
+eip = 005263f3
+esp = 0637fbf0
+ebp = 0637fbf8
+
+stack dump:
+0637fbf0  00 00 00 00 00 00 00 00 - 30 fc 37 06 d4 a3 52 00  ........0.7...R.
+0637fc00  00 00 00 00 00 00 00 00 - 40 fc 37 06 14 9e 40 00  ........@.7...@.
+0637fc10  30 fc 37 06 d0 fc 37 06 - 00 00 00 00 10 5c 50 00  0.7...7......\P.
+0637fc20  00 20 00 00 e0 4f 40 02 - e0 4f 40 02 00 00 00 00  . ...O@..O@.....
+0637fc30  bc fc 37 06 9a d7 6f 00 - 00 00 00 00 00 00 00 00  ..7...o.........
+0637fc40  4c fc 37 06 14 9e 40 00 - bc fc 37 06 d0 fc 37 06  L.7...@...7...7.
+0637fc50  14 9e 40 00 bc fc 37 06 - 39 c2 6f 00 60 fc 37 06  ..@...7.9.o.`.7.
+0637fc60  ac fc 37 06 14 9e 40 00 - 9c fc 37 06 00 00 00 00  ..7...@...7.....
+0637fc70  a0 bd 40 02 60 fd 37 06 - 46 67 40 00 d7 a7 40 00  ..@.`.7.Fg@...@.
+0637fc80  08 00 00 00 00 00 00 00 - 00 00 00 00 08 00 00 00  ................
+0637fc90  08 00 00 00 85 bc 40 00 - f8 2a 34 02 08 00 00 00  ......@..*4.....
+0637fca0  14 d1 6f 00 34 d1 6f 00 - 00 39 38 02 00 00 00 00  ..o.4.o..98.....
+0637fcb0  00 00 00 00 00 00 00 00 - 00 00 00 00 98 fe 37 06  ..............7.
+0637fcc0  61 c3 6f 00 a0 e1 42 02 - 00 00 00 00 cc e0 41 02  a.o...B.......A.
+0637fcd0  dc fc 37 06 14 9e 40 00 - 98 fe 37 06 a0 fe 37 06  ..7...@...7...7.
+0637fce0  14 9e 40 00 98 fe 37 06 - 00 00 00 00 00 1a 41 02  ..@...7.......A.
+0637fcf0  40 aa 3b 02 00 00 00 00 - 00 00 00 00 00 00 00 00  @.;.............
+0637fd00  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0637fd10  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0637fd20  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+
+disassembling:
+[...]
+006fd788 937   push    0
+006fd78a       push    0
+006fd78c       mov     eax, [ebp-$24]
+006fd78f       mov     eax, [eax+$30]
+006fd792       mov     edx, [ebp+$c]
+006fd795     > call    -$1d3402 ($52a398)     ; System.Classes.TStream.CopyFrom
+006fd79a 938   push    $6fdad0
+006fd79f       push    dword ptr [ebp-4]
+006fd7a2       push    $6fd9ac
+006fd7a7       push    $6fd9c0
+006fd7ac       lea     eax, [ebp-8]
+[...]
+

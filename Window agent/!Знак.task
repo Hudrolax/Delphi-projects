@@ -1,0 +1,11 @@
+0
+!Знак
+!Знак.task
+c:\WAgent\ВсеПредупреждения.bmp
+0:02:00
+4:30:00
+BitmapClick КнопкаОК.bmp
+BitmapClick КнопкаЗавершить.bmp
+BitmapClick КнопкаОтмена.bmp
+sleep 15000
+if (NoProcess = 1cv8recalc.exe) run Start.cmd

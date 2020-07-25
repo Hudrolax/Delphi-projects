@@ -1,0 +1,1 @@
+%SystemRoot%\system32\cmd.exe /c ping nazarov -l 1000 -t -f
